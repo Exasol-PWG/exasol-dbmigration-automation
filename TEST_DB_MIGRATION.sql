@@ -9,5 +9,7 @@ EXECUTE SCRIPT DATABASE_MIGRATION.DB_MIGRATION(
     true                            -- IDENTIFIER_CASE_INSENSITIVE: set to TRUE if identifiers should be put uppercase
 );
 
---Execute via the command line
---exaplus -c 192.168.56.102:8563 -u sys -p exasol -f "/Users/pw/Documents/GitHub Repos/exasol-dbmigration-automation/exasol-dbmigration-automation/TEST_DB_MIGRATION.sql"
+/*
+The DB_MIGRATION script takes the same parameters as the Exasol migration scripts becaause part of the script is to call the underlying
+migration script and pass the parameters straight through
+*/
